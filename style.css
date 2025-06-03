@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  overflow-x: hidden;
+
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.8)),
+              url('/img/img-bg.png') center/cover no-repeat;
+  padding-bottom: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.custom-navbar {
+  /* position: absolute; */
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  z-index: 1000;
+  max-width: 250px;
+}
+/* Remove outline and border */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.25rem;
+}
+
+/* Force clean white hamburger lines */
+.navbar-toggler-icon {
+    position: relative;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.5rem;
+  height: 1.5rem;
+  right: 50px;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.collapse{
+    border-radius: 0%;
+}
+.navbar-nav{
+    border-radius: 0%;
+}
+.menu-icon {
+  cursor: pointer;
+
+}
+
+.badge.bg-orange {
+  background-color: #f97316;
+  font-weight: 500;
+}
+
+.cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e05800;
+}
+
+.arrow-icon {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text1{
+    position: relative;
+    top: -200px;
+}
+.text2{
+    position: relative;
+    top: -200px;
+}
+.name-text {
+    position: absolute;
+  font-size: 17rem;
+  line-height: 1.1;
+  color:darkgray;
+    left: -23px;
+    top: 300px;
+}
+
+    .carousel-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #161616;
+      padding: 40px ;
+    }
+
+    .tech-carousel {
+      display: inline-flex;
+      animation: scroll 25s linear infinite;
+    }
+
+    .tech-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: none;
+      margin: 0 40px;
+      opacity: 0.3;
+      transition: opacity 0.3s;
+    }
+
+    .tech-item:hover {
+      opacity: 1;
+    }
+
+    .tech-icon {
+      font-size: 38px;
+      color: #ccc;
+    }
+
+    .tech-label {
+      font-size: 1.2rem;
+      color: #ccc;
+      font-weight: 500;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 768px) {
+      .tech-item {
+        margin: 0 20px;
+        gap: 8px;
+      }
+
+      .tech-icon {
+        font-size: 20px;
+      }
+
+      .tech-label {
+        font-size: 0.9rem;
+      }
+    }
+
+
+
+.bio-text {
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.intro-section {
+
+  color: rgb(162, 160, 160);
+  background-color: rgba(15, 13, 13, 0.8);
+}
+.intro-section .container {
+  padding: 60px ;
+  text-align: center;
+}
+.intro-heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Stylish Resume Button */
+.resume-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6a00;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-button::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.resume-button:hover {
+  background-color: #e05800;
+  padding-right: 32px;
+}
+.projects{
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: rgba(15, 13, 13, 0.8);
+
+}
+    .section-title {
+        padding-left: 60px;
+    color: #aaa;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+        padding-left: 60px;
+      font-size: 1.3rem;
+      color: #aaa;
+      max-width: 600px;
+    }
+
+    .project-card {
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+      
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .modal-content {
+      background-color: #000;
+      border-radius: 12px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .modal-body img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2.2rem;
+      }
+
+      .section-subtitle {
+        font-size: 1rem;
+      }
+          .name-text {
+    position: absolute;
+
+  font-size: 7rem;
+  line-height: 1.1;
+  color:darkgray;
+    left: 0px;
+    top: 600px;
+}
+.hero {
+  min-height: 80vh;
+  /* background-size: 150%; */
+
+}
+.text2{
+    position: relative;
+    top: -27px;
+}
+.cta-button{
+    display: none;
+}
+
+    }
+
+
+
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+      display: none !important;
+    }
+    .navbar-expand-lg .navbar-toggler.collapsed + .navbar-collapse.show {
+      display: block !important;
+    }
+
+  }
