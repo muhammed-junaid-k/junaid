@@ -17,48 +17,6 @@ body {
   justify-content: space-between;
 }
 
-
-.custom-navbar {
-  /* position: absolute; */
-  top: 20px;
-  left: 20px;
-  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
-  z-index: 1000;
-  max-width: 250px;
-  display: none;
-}
-/* Remove outline and border */
-.navbar-toggler {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  padding: 0.25rem;
-}
-
-/* Force clean white hamburger lines */
-.navbar-toggler-icon {
-    position: relative;
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  width: 1.5rem;
-  height: 1.5rem;
-  right: 50px;
-}
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-}
-.collapse{
-    border-radius: 0%;
-}
-.navbar-nav{
-    border-radius: 0%;
-}
-.menu-icon {
-  cursor: pointer;
-
-}
-
 .badge.bg-orange {
   background-color: #f97316;
   font-weight: 500;
@@ -355,15 +313,3 @@ body {
     .text-4xl {
       font-size: 1.5rem;
     }
-
-
-
-  @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-      display: none !important;
-    }
-    .navbar-expand-lg .navbar-toggler.collapsed + .navbar-collapse.show {
-      display: block !important;
-    }
-
-  }
