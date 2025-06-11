@@ -51,12 +51,13 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 20px;
+  padding: 7px 15px;
   background: #ff6a00;
   color: white;
   border: none;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: smaller;
   text-decoration: none;
   overflow: hidden;
   transition: background 0.3s ease;
@@ -267,6 +268,21 @@ body {
       width: 100%;
       height: auto;
     }
+.services{
+    background-color: rgba(15, 13, 13, 0.8);
+
+}
+.contact{
+    background-color: rgba(15, 13, 13, 0.8);
+}
+.services-title{
+      color: rgb(162, 160, 160);
+
+}
+
+
+
+
 
     @media (max-width: 768px) {
       .section-title {
@@ -307,7 +323,7 @@ display: none;
 }
 .work{font-size: 1.5rem;}
 .cta-button{
-    display: none;
+    /* display: none; */
 }
 .custom-navbar{
     display: none;
