@@ -222,6 +222,7 @@ body {
 .projects{
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 60px;
     background-color: rgba(15, 13, 13, 0.8);
 
 }
@@ -270,7 +271,7 @@ body {
     }
 .services{
     background-color: rgba(15, 13, 13, 0.8);
-
+    padding-top: 0px;
 }
 .contact{
     background-color: rgba(15, 13, 13, 0.8);
